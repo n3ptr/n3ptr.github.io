@@ -23,42 +23,47 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-
-  <p> 
-    <h4 align="right">Nicholas</h4>
-  </p>
-  <p>
-    <h4 align ="right">Smith</h4>
-  </p
-  <hr>
-  <div class="row">
-    <div class="column" style="background-color:#aaa;">
-      <h2>Column 1</h2>
-      <p>Some text..</p>
-    </div>
-    <div class="column" style="background-color:#bbb;">
-      <h2>Column 2</h2>
-      <p>Some text..</p>
-    </div>
+  <div class="wrapper">
+    <section class="sidebar">
+        <div id="shadowbox">
+          <p>A div element with a shadow. The first value is the horizontal offset and the second value is the vertical offset. The shadow color will be inherited from the text color.</p>
+        </div>
+      <p>
+        <br>A new line, but still part of the second paragraph.</p>
+      <p>A third paragraph, and then a horizontal line</p>
+      <hr>
+      <p>Some modified horizontal lines:</p>
+    </section>
+    <aside class="main-column">
+      <p>
+        <h4>Nicholas Smith</h4>
+        <p>Data and Automotive Specialist</p>
+      </p>
+      <p>
+        <br>A new line, but still part of the second paragraph.</p>
+      <p>A third paragraph, and then a horizontal line</p>
+      <hr>
+      <p>Some modified horizontal lines:</p>
+    </aside>
   </div>
-  <p>
-  <br>A new line, but still part of the second paragraph.</p>
-  <p>A third paragraph, and then a horizontal line</p>
-  <hr>
-  <p>Some modified horizontal lines:</p>
-  <hr width="50%" size="8" align="center">
-  <hr noshade>
-
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+  </script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    window.ga = function() {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>

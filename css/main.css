@@ -26,5 +26,5 @@
 #shadowbox {
   border: 1px solid;
   padding: 10px;
-  box-shadow: 4px 8px;
+  box-shadow: 4px 8px #888888;
 }

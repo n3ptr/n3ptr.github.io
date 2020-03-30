@@ -1,78 +1,96 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- much of the layout here was originally found @  https://css-tricks.com/examples/SuperSimpleTwoColumn/ -->
+<!-- Slide show modified from W3schools https://www.w3schools.com/howto/howto_js_slideshow.asp -->
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+	<title>yet unknown</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Sen&display=swap" rel="stylesheet">
+	<script src="slides.js"></script>
+	<script type="text/javascript">
+        function firstSlide() {
+			showSlides(slideIndex);
+        }
+        window.onload = firstSlide;
+    </script>
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
 
-  <!-- content here -->
-  <div class="wrapper">
-    <section class="sidebar">
-      <div id="shadowbox">
-        <p>A div element with a shadow. The first value is the horizontal offset and the second value is the vertical offset. The shadow color will be inherited from the text color.</p>
-      </div>
-      <p>
-        <br>A new line, but still part of the second paragraph.</p>
-      <p>A third paragraph, and then a horizontal line</p>
-      <hr>
-      <p>Some modified horizontal lines:</p>
-    </section>
-    <aside class="main-column">
-      <p>
-        <h4>Nicholas Smith</h4>
-        <p>Data and Automotive Specialist</p>
-      </p>
-      <p>
-        <br><h5>Work Experience</h5></p>
-      <p>Oct 2019 - Present - Data Analysis Engineer</p>
-      <p>Toyota Motor North America</p>
-      <p>Researching company data, and opportunties through the lens of data science</p>
-      <p>Leveraging big manufaturing & quality data to find new insites into our quality operations. These solutions will be automated and integrated into Toyota's core quality opperations.</p>
-      <hr>
-      <p>April 2016 - Oct 2019 - Product Owner of Toyota's Technical Information System</p>
-      <p>Toyota Motor North America</p>
-      <p>Organizing and directing website development and maintaince throught he scrum agile framework</p>
-      <p>In this role, my focus was on maintaining site funtionality and kaizen while balancing the requirements of new vehicle and feature support.</p>
-      <hr>
-    </aside>
-  </div>
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
-  </script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+	<div id="header">
+		<!-- <h1>Super Simple Two Column Layout</h1> -->
+	</div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function() {
-      ga.q.push(arguments)
-    };
-    ga.q = [];
-    ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('set', 'transport', 'beacon');
-    ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+	<div id="content">
+		<div id="sidebar">
+			<p>
+				<H2>Joaquin Cuevas</H2>
+			</p>
+			<!-- <p class = "leftItem"> 
+					<a href="">Overview</a>
+				</p> -->
+			<p>
+				<a href="">Gear</a>
+			</p>
+			<p>
+				<a href="">Prints</a>
+			</p>
+			<p>
+				<a href="">Contact</a>
+			</p>
+		</div>
+
+		<div id="main-content">
+
+			<!-- Slideshow container -->
+			<br>
+			<div class="slideshow-container">
+
+				<!-- Full-width images with number and caption text -->
+
+				<div class="mySlides fade">
+					<!-- <div class="numbertext">2 / 4</div> -->
+					<img src="images/img1.jpg" style="width:100%">
+					<div class="text">Caption Text</div>
+				</div>
+
+				<div class="mySlides fade">
+					<!-- <div class="numbertext">3 / 4</div> -->
+					<img src="images/img2.jpg" style="width:100%">
+					<div class="text">Caption Two</div>
+				</div>
+
+				<div class="mySlides fade">
+					<!-- <div class="numbertext">4 / 4</div> -->
+					<img src="images/img3.jpg" style="width:100%">
+					<div class="text">Caption Three</div>
+				</div>
+
+				<div class="mySlides fade">
+					<!-- <div class="numbertext">1 / 4</div> -->
+					<img src="images/img4.jpg" style="width:100%">
+					<div class="text">Caption Four</div>
+				</div>
+
+				<div class="mySlides">
+					<!-- <div class="numbertext">1 / 4</div> -->
+					<img src="images/img5.jpg" style="width:100%">
+					<div class="text">Caption Four</div>
+				</div>
+
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>
+		<br>
+		<div class="clear"></div>
+	</div>
+
 </body>
 
 </html>
